@@ -340,7 +340,7 @@ console.log('Round4 Schedule:', Round_4);
 winner_round4 = []
 function winnerRound4(){
     for(w=0; w<Round_4.length/2;w++){
-        if((Math.round(Math.random(Round_4[w][0]) * 100)) < (Math.round(Math.random(Round_4[w][1] * 100))) )
+        if((Math.round(Math.random(Round_4[w][0]) * 100)) > (Math.round(Math.random(Round_4[w][1] * 100))) )
         {
             winner_round4.push(Round_4[w])
         }
