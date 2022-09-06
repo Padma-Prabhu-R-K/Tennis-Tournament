@@ -153,18 +153,16 @@ for (j of Players_List) {
 Reversed_Next = Next_Rankers.reverse()
 
 array4=[]
-// for(i in Top_Rankers){
-//     for(j in Next_Rankers){
         // n = Top_Rankers.map((e,i) => `${e} , ${Next_Rankers[i]}`)
         // array4.push([n])
-//     }
-// }
+
 // array4=array4[0]
-// console.log(array4,'array4')
+
 for(i in Top_Rankers){
              array4.push([Top_Rankers[i],Reversed_Next[i]])
  }
  // console.log(array4,'array4')
+ // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  // Dividing the Name list based on their Index
 oddArray = []
@@ -327,7 +325,7 @@ function Round4(){
     }
 
     for(v in oddArray3){
-        Round_4.push(oddArray3[v],evenArray3[v])
+        Round_4.push(evenArray3[v],oddArray3[v])
     }
 }
 Round4()
